@@ -1,8 +1,8 @@
 public class App {
     public static void main(String[] args) throws Exception {
         
-        Cachorro mag = new Cachorro("Mag", 'F', 2, 0.42f, 7.2f); 
-     Cachorro luna = new CaChorro("Luna", "shih tzu", "white", 'F', 2, 0.42f, 8.2f, true); 
+        Cachorro mag = new Cachorro("Mag", 'F', 8, 25f, 7.2f); 
+     Cachorro luna = new Cachorro("Luna", "shih tzu", "white", 'F', 2, 0.42f, 8.2f, true); 
 
 
 
@@ -78,13 +78,16 @@ class Cachorro {
         String vaccineStr = this.hasVaccine ? "vacinado" : "não vacinado";
 
         System.out.println(
-                "Esse é " + this.name +
-", ele é um cachorro com " + this.age + " anos " + 
- " da cor " this.color + 
-, " de porte " this.size + " e peso" this.weight + 
-" é um cachorro" , sexStr + 
-" está" vaccineStr);
-    }
+                "Essa é" + this.name + "da raça, + this.breed + 
+" da cor " this.color +   
+" é um cachorro", + this.sex + 
+"ela é um cachorro com " + this.age + ", " anos " + 
+, " de porte " this.size +
+ " e peso" this.weight + 
+" e está" + this.hasVaccine);  
+ 
+}
+   
 
     public String imcc() {
         
@@ -96,7 +99,7 @@ class Cachorro {
             imccDescription = "Abaixo do peso";
         }
  
-else if (imcc <= 25.0) {
+else if (imcc <= 25.0) 7B
             imccDescription = "Peso normal";
         }
  
@@ -111,4 +114,4 @@ else if (imcc <= 30) {
         return imccDescription;
     }
 
-}
+    }
